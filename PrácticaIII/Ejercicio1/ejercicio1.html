@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  bgcolor="#ADD8E6">
+    <div class="panel">
+        <div class="contenedor">
+            <center><h2>Temperatura</h2></center>
+            <h3>Ingrese la temperatura:</h3>
+            <form action="">
+                <input id="z" type="text">
+                <p>OBTENER</p>
+                <p>=</p>
+                <input id="totl" type="text" readonly>
+                <input type="button" class="btn" onclick="Temperatura()" value="Resultado">
+            </form>
+            </div>
+            <script>
+                function Temperatura(z){
+                    var c=parseFloat(document.getElementById('z').value);
+                    var A = ("FRIO");
+                    var B = ("TEMPLADO");
+                    var C = ("CALOR");
+                    var res1=c;
+                    document.getElementById('totl').value = res1;
+                    if(res1 < 15){
+                        document.getElementById("totl").value= A;
+                    }
+                    else{
+                        if(res1>=5 && res1 < 25){
+                            document.getElementById("totl").value= B;
+                        }
+                        else{
+                            if(res1>=25){
+                                document.getElementById("totl").value= C;
+                            }
+                        }
+                    }
+
+                }
+            </script>
+</body>
+</html>

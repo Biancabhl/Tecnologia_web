@@ -22,16 +22,21 @@ h2 {
     border-bottom: 2px solid #bbb;
 }
 
+body{ 
+    background-color: #dabfcd;
+}
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 600px;
+    
 }
 
 header, footer, footer a {
     text-align: center;
     background-color:#cf3d86;
     color: whitesmoke;
+    
 }
 
 header img {
